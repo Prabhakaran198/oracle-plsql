@@ -1,0 +1,15 @@
+For example there is a bank which is called tts bank we gonna be create the application for tts bank the process of this application.
+
+                                                        *new account
+                                                        *modification
+                                                        *transaction
+                                                        *debit card ping
+                                                        *credit card ping 
+                                                        *features.
+
+we  gonna develop salary account,savings and current account with different features,business analyst daily interact with the client on daily basis and collect the requirements.
+
+BUSINESS ANALYST is gonna ready DFS(detailed functional specification) document in this document what we gonna be do,and share the knowledge to other teams or also called DFS WALK THROUGH.THE business analyst will explain all the requirements what we collected from the client he will explain to the all the teams.
+
+If  the project is huge they are gonna split into multiple modules,we  gonna be working for multiple modules.we should develop the code accurately as per the dfs.based on the dfs document we get the table design,in real time we dont want to ready the table design,it is gonna ready and share from the manager side.
+

@@ -1,0 +1,46 @@
+ttsbank_banks
+bank_id                     bank_code                                  bank_location                     is_head_office
+1000                        ttsbnk001                                    chennai                             y
+1001                        ttsbnk002                                    madurai                             n
+1002                        ttsbnk003                                    coimbatore                          n
+
+
+ttsbank_products
+product_id                  product_name                                product_code
+2000                        savings bank                                  sb
+2001                        current                                       cb
+2002                        business                                      bb
+
+
+
+ttsbank_sub_products
+sub-project_id               product_id                 features             balance_limit            withdraw_limit
+3000                           2000                      silver               5000                       50000
+3001                           2000                      gold                 10000                      100000
+3002                           2000                      platinum             15000                      2500000 
+3003                           2001                      silver
+
+ttsbank_employees
+employee_id                 employees_name              bank_id   
+4000                         vikram                       1001
+4001                         arvind                       1000
+
+
+ttsbank_customers
+customer_id      customer_name       customer_phno         customer_email     aadhar_phno        pan_no      password
+500               raja                                                                                        12345
+
+
+ttsbank_cus_transactions
+cus_product_id           sub_product_id    customer_id       account_no       account_open_on           status          available_balance     bank_id 
+6000                       3000               5000           98765432189        24-03-2003               active              5000               1000
+6001                       3003               5000                                                                                              1001
+
+ttsbank_cus_transaction
+cus_trans_id          cus_product_id    trans_amount      trans_type       trans_on        accounnt_balance
+7000                      6000            5000               c             24-03-2023        5000
+7001                      6000            3000               c             24-03-2023        8000
+
+ttsbank_password_track
+track_id         customer_id            customer_password         password_changed_on
+8000             5000                     12398                    31-aug-23

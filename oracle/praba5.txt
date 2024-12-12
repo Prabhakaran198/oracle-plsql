@@ -1,0 +1,26 @@
+we want to write  procedure for account creation.
+
+
+create or replace procedure sp_ttsbank_newaccount(p_customer_name in varchar2,p_customer_phno in number,p_customer_mail in varchar2,p_aadhar_no in number,p_cus_panno in varchar2,p_password in ttsbank_customers.password%type,p_sub_product_id in number,p_trans_amount in number,p_trans_type in varchar2,p_trans_for in varchar2,p_trans_mode in varchar2,p_msg out varchar2)as
+                            l_cusid number;
+                            l_cusprodid number;
+                            l_accno number;
+begin
+insert into ttsbank_customers(customer_id,customer_name,customer_phno,customer_mail,aadhar_no,pan_no,password)values(sqcusid.nextval,p_customer_name,p_customer_phno,p_customer_mail,p_aadhar_no,p_cus_panno,p_password)returning customer_id into cus_id;
+
+
+insert into ttsbank_cus_products
+
+(cus_product_id,sub_product_id,customer_id,account_no,account_open_on,status,available_balance)values(spprodid.nextval,p_sub_product_id,l_cusid,sqaccno.nextval,sysdate,'active',p_trans_amount)returning cus_product_id,account_no intol_cusprodid,l_accno;
+
+
+insert into ttsbank_cus_transaction
+
+(cus_trans_id,cus_product_id,trans_amount_trans_type,trans_on,trans_for,p_trans_mode,account_balance)values (sqtransid.nextval,p_trans_amount,p_trans_type,sysdate,p_trans_for,p_trans_mode,p_trans_amount);
+
+p_msg:='account created and a/c no is'||l_accbo;
+
+end;
+/
+
+after running the procedure we have to insert the values,when the customer wants to create the new account,we want to execute this procedure and automatically values inserted into above three tables.

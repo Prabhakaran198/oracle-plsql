@@ -1,0 +1,26 @@
+                                                                       BANKING PROJECT
+
+
+                   NEED TO DEVELOP APPLICATION FOR BANKING THE PROJECT GETS FROM THE CLIENT WE NEED TO DEVELOP THE CODE FOR THAT APPLICATION BY                                                          USING SQL AND PLSQL CONCEPT.
+
+THERE ARE 5 PHASES IN SOFTWARE DEVELOPMENT LIFE CYCLE,      
+
+                                                     *ANALYSIS  
+                                                     *DESIGN
+                                                     *DEVELOPMENT 
+                                                     *TESTING
+                                                     *MAINTENANCE.
+
+ANALYSIS-It is the first phase for the development cycle,in this phase we discussed about gathering business requirements,it was done by business analyst.
+
+
+DESING-In this phase,the discussed business requirements how we gonna be implement  and we need the desingn is called design phase.
+
+DEVELOPMENT-It is a crucial phase,in this phase we write a code for the app as per business requirements it is done by developers.
+
+TESTING-THERE ARE TWO TYPES OF TESTING MANUAL TESTING AND AUTOMATION TESTING,in this phase we gonna test the code which is done by developers it will shows if there is any error in the code.
+
+MAINTENANCE-In this phase the analyzed,designed,developed,tested ones,whether it is correctly working or not are done in maintenance phase,another name for maintenance is called support.
+
+                                    after all the phases are completed its gonna be release   
+

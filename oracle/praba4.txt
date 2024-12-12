@@ -1,0 +1,39 @@
+                                                   ttsbank_banks - to maintain bank information
+                                                   ttsbank_products - to maintain products of bank
+                                                   ttsbank_sub_products - details of products- silver/gold/platinum
+                                                   ttsbank_employees- to maintain bank employees data
+                                                   ttsbank_customers- to maintain customers data of the the bank
+                                                   ttsbank_cus_products- to maintain the customers products
+                                                   ttsbank_cus_transaction- what are the transaction done by the customers will be tracked here
+                                                   ttsbank_password_track- the password they kept will be tracked here.
+
+we have to create the table.
+
+                                                    SELECT * FROM ttsbank_banks;
+                                                    SELECT * FROM ttsbank_products;
+                                                    SELECT * FROM ttsbank_sub_products;
+                                                    SELECT * FROM ttsbank_employees; COPIED EMPLOYEES TABLE DATA.
+                                                    SELECT * FROM ttsbank_customers;
+                                                    SELECT * FROM ttsbank_cus_products;
+                                                    SELECT * FROM ttsbank_cus_transaction;
+
+
+
+
+create or replace procedure sp_bank_products(P_bank_prod out sys_refcursor) as
+begin
+/*
+Author:Prabhakaran
+Created on :21-oct-2024
+Purpose :This procudere is used to retrive bank and products info from respective tables(ttsbank_banks and ttsbank_products)
+*/
+open p_banks for select bank_id,bank_location from ttsbank_banks;
+oprn p_bank_prod for select product_id,product_name from ttsbank_products;
+end;
+/
+
+
+
+
+
+
